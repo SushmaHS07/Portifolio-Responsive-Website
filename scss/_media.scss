@@ -1,0 +1,163 @@
+//Tablets and SmartPhone
+
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
+    padding: 2rem;
+
+    #header-content {
+      padding-top: 5rem;
+
+      h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+      }
+    }
+  }
+}
+
+//smart phones
+
+@media (max-width: 600px) {
+  //nav
+  #main-nav {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    #logo {
+      margin: 0 auto;
+    }
+
+    ul {
+      justify-content: center;
+    }
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  //header
+
+  #header {
+    &-home {
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+      background-bottom: 20% 30%;
+
+      #header-content {
+        display: none;
+      }
+    }
+
+    &-inner {
+      height: 10rem;
+    }
+  }
+
+  //section-home
+
+  #home {
+    &-a {
+      #specials {
+        grid-template-columns: 1fr;
+      }
+    }
+    &-b {
+      #stats {
+        grid-template-columns: 1fr;
+      }
+    }
+    &-c {
+      #process {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  //section- about
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          "bioimage"
+          "bio"
+          "aw1"
+          "aw2"
+          "aw3";
+      }
+    }
+
+    &-c {
+      .about-logos {
+        display: none;
+      }
+    }
+
+    &-d {
+      .testimonial {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  //section - work
+
+  #work {
+    &-a {
+      .items {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+      }
+    }
+  }
+
+  //section - contact
+
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "email"
+          "subject"
+          "phone"
+          "message";
+      }
+    }
+    &-b {
+      .contact-info {
+        grid-template-columns: 1fr;
+        grid-gap: 1.5rem;
+      }
+    }
+
+    &-c {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  //footer
+
+  #main-footer {
+    height: 7rem;
+    padding: 1rem;
+
+    .footer-content {
+      flex-direction: column;
+      height: 5rem;
+      padding: 1rem;
+
+      .social {
+        margin: 0.4rem;
+
+        .fab {
+          margin-right: 0.2rem;
+        }
+      }
+    }
+  }
+}
